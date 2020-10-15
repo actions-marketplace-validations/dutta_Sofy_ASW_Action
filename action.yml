@@ -1,0 +1,21 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  website_url:  # id of input
+    description: 'Website Endpoint to Run SOFY for WEB'
+    required: true
+    default: ''
+  application_guid:  # id of input
+    description: 'ApplicationGUID retrieved from SOFY for Web'
+    required: true
+    default: ''
+  application_id:  # id of input
+    description: 'ApplicationID retrieved from SOFY for Web'
+    required: true
+    default: ''
+outputs:
+  time: # id of output
+    description: 'The time we queued the test'
+runs:
+  using: 'node12'
+  main: 'index.js'
