@@ -36,7 +36,7 @@ try {
 
   var options = {
         hostname: 'api.sofy.ai',
-        path: 'api/WebTests/Create',
+        path: '/api/WebTests/Create',
         method: 'POST',
         headers: {
              'Content-Type': 'application/json',
