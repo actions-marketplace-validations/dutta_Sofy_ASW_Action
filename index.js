@@ -56,6 +56,7 @@ try {
            }
       };
     var req = https.request(options, (res) => {
+        console.log(res);
         console.log('statusCode:', res.statusCode);
         console.log('headers:', res.headers);
 
