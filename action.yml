@@ -1,4 +1,4 @@
-name: 'Hello World'
+name: 'Sofy-Workflow-Action'
 description: 'Greet someone and record the time'
 inputs:
   website_url:  # id of input
