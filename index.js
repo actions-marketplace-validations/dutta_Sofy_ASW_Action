@@ -39,9 +39,19 @@ try {
         path: '/api/WebTests/Create',
         method: 'POST',
         headers: {
-             'Content-Type': 'application/json',
+             
              'Content-Length': postData.length,
-             'SofyAuth' : "67935C5B-A009-4DC8-9EC6-2F8E9D58E6DC"
+             'Connection' : 'keep-alive',
+             'Pragma' : 'no-cache',
+             'Cache-Control' : 'no-cache',
+             'Accept' : 'application/json, text/plain, */*',
+             'SofyAuth' : "67935C5B-A009-4DC8-9EC6-2F8E9D58E6DC",
+             'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.228',
+             'Content-Type': 'application/json',
+             'Origin' : 'https://portal-sofy-test.azurewebsites.net',
+             'Sec-Fetch-Site' : 'cross-site',
+             'Sec-Fetch-Mode' : 'cors',
+             'Sec-Fetch-Dest' : 'empty',
            }
       };
     var req = https.request(options, (res) => {
