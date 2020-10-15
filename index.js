@@ -5,6 +5,7 @@ const https = require('https')
 
 try {
   // `who-to-greet` input defined in action metadata file
+  console.log("UPDATED")
   const weburl = core.getInput('website_url');
   const appguid = core.getInput('application_guid');
   const appid = core.getInput('application_id');
